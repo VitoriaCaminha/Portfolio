@@ -10,8 +10,8 @@ justify-content: space-evenly;
 align-items: center;
 
 img {
-    width: 20vw;
-    height: 35vh;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 `
