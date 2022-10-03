@@ -1,6 +1,7 @@
 import React from 'react'
 import Dev from './images/vitoriacaminha.png'
 import FundamentosJS from './images/fundamentos-js.png'
+import Calculadora from './images/calculadora.js'
 import { Presentation, Projects } from './Style'
 
 export default function App() {
@@ -15,8 +16,13 @@ export default function App() {
       </Presentation>
 
       <Projects>
-        <a href='https://fundamentos-js.vercel.app' target='_blank'>Fundamentos JavaScript
-          <img src={FundamentosJS} alt='imagem do primeiro projeto, chamado Fundamentos JavaScript' />
+        <a href='https://fundamentos-js.vercel.app' target='_blank'>
+          Fundamentos JavaScript
+          <img src={FundamentosJS} alt='imagem do projeto chamado Fundamentos JavaScript' />
+        </a>
+        <a href='https://calculadora.vitoriacaminha.vercel.app' target='_blank'>
+          <img src={Calculadora} alt='imagem do projeto chamado Calculadora' />
+          Calculadora
         </a>
       </Projects>
     </div>
