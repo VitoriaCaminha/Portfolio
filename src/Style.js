@@ -100,6 +100,7 @@ height: 25vh;
 
 export const ProjectImage = styled.img`
 width: 15vw;
+border-radius: 4px;
 
 @media (max-width: 550px) {
     width: 40vw;
