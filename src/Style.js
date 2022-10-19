@@ -21,6 +21,9 @@ height: 15vh;
 font-size: 2.5vh;
 `
 
+
+// Home
+
 export const Box = styled.div`
 display: flex;
 justify-content: space-evenly;
@@ -105,4 +108,47 @@ width: 15vw;
 @media (min-width:550px) and (max-width: 850px) {
     width: 25vw;
 }
+`
+
+
+// About
+
+export const Container = styled.div`
+width: 90%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+@media (max-width: 750px) {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+`
+
+export const Image = styled.img`
+width: 25%;
+`
+export const Education = styled.div`
+width: 45%;
+height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+text-align: justify;
+
+@media (max-width: 750px) {
+    width: 80%;
+}
+`
+
+// Contacts
+
+export const ContactsContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 70vh;
 `
