@@ -1,41 +1,108 @@
+import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 
-export const Presentation = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-font-family: 'Yeseva One', 'cursive';
-background-color: #daeafd;
-height: 60vh;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-
-img {
-    width: 30vh;
-    border-radius: 50%;
+export const GlobalStyle = createGlobalStyle`
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #ADD8E6;
+color: #2F4F4F;
+font-family: 'Fredoka', sans-serif;
 }
+`
+
+export const Nav = styled.nav`
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+list-style: none;
+height: 15vh;
+font-size: 2.5vh;
 `
 
 export const Box = styled.div`
-padding: 2vh 0;
+display: flex;
+justify-content: space-evenly;
+height: 65vh;
+
+@media (max-width: 850px) {
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    gap: 3vh;
+}
+`
+
+export const Presentation = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+`
+
+export const Img = styled.img`
+width: 25vh;
+border-radius: 50%;
+`
+
+export const Div = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 40vw;
+
+@media (max-width: 1250px) {
+    width: 50vw;
+}
+`
+
+export const H2 = styled.h2`
+@media (max-width: 850px) {
+    font-size: 4vh;
+}
 `
 
 export const Projects = styled.div`
-width: 60vw;
-margin: 2vh auto;
-border: solid 1px gray;
-border-radius: 5px;
+width: 30vw;
 
-a {
-    text-decoration: none;
-    font-size: 5vh;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40vh;
+@media (max-width: 1250px) {
+    width: 100%;
+}
+`
+
+export const A = styled.a`
+text-decoration: none;
+font-size: 3.5vh;
+font-weight: bold;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 25vh;
+
+@media (max-width: 550px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: clamp(1.5rem, 0.5rem + 2vw, 3rem);
+    height: 20vh;
 }
 
-img {
-    width: 20vw;
+@media (min-width:550px) and (max-width: 1250px) {
+    justify-content: space-between;
+    font-size: clamp(1.5rem, 0.5rem + 2vw, 4rem);
+    height: 18vh;
+}
+`
+
+export const ProjectImage = styled.img`
+width: 15vw;
+
+@media (max-width: 550px) {
+    width: 40vw;
+}
+
+@media (min-width:550px) and (max-width: 850px) {
+    width: 25vw;
 }
 `
